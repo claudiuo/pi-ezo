@@ -1,0 +1,81 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+        <meta name="keywords" content="">
+	
+        <meta name="description" content="">
+
+        <link rel="stylesheet" type="text/css" href="layout.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        
+        <title>onebeartoe Piezo Web Application</title>
+    </head>
+
+    <body onload="loadSongList();
+                  showBuiltInControls();">
+        
+        <script type="text/javascript" src="piezo.js"></script>
+        
+        <div class="modeNavigation">
+            <a href="#" onclick="showBuiltInControls();">
+                Built-In
+            </a>
+            | 
+            <a href="#" onclick="showOnTheFlyControls();">
+                On-the-Fly
+            </a>
+        </div>
+        
+	<div class="title">	 
+            <h3>Piezo Web Controls</h3>
+	</div>
+        
+        <div id="songListControls">
+            <center >            
+                <select id="songList"
+                        name="modeeeeeee" 
+                        onchange="playSong(this.value);"
+                        size="10"
+                        class="songList">
+                </select>
+            </center>
+        </div>    
+        
+        <div id="onTheFlyControls" class="onTheFlyControls">
+            <textarea id="rtttlData"
+                      class="rtttlData"
+                      rows="4" cols="50"></textarea>
+            
+            <input type="button" 
+                   value="Play"
+                   onclick="playRtttl(rtttlData.value);"
+                   class="rtttlData"/>
+        </div>
+        
+        <hr/>
+        
+        <div class="logs">
+            <h3>Logs</h3>
+        
+            <div id="logs" >
+
+            </div>
+        </div>
+
+        <br/>
+
+        <hr/>
+        
+	<br/>
+
+        
+	<a href="http://electronics.onebeartoe.org/"
+           class="broughtToYouBy">
+            development by onebeartoe.org
+	</a>
+    </body>
+
+</html>
