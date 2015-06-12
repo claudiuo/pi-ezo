@@ -28,7 +28,16 @@
               <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
-    </repositories>    
+        <repository>
+          <id>onebeartoe-snapshots-repo</id>
+          <name>CloudBees Maven Repository</name>
+          <url>https://repository-onebeartoe.forge.cloudbees.com/snapshot/</url>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+          </snapshots>
+       </repository>
+	 </repositories>    
     
     <dependencies>
         <dependency>
